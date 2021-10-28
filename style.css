@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#current {
+  width: 35%;
+  height: 300px;
+  border: 5px solid rgb(52, 152, 219);
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+#current > p,
+#current > h3 {
+  color: rgb(255, 205, 2);
+  font-weight: bold;
+  font-size: large;
+}
+#current > h3 {
+  color: rgb(52, 152, 219);
+}
+header {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(52, 152, 219);
+  display: flex;
+  justify-content: space-around;
+}
+#header-1,
+#header-3 {
+  width: 25%;
+  height: 90px;
+  background-color: rgb(52, 152, 219);
+}
+#header-2 {
+  align-self: center;
+}
+#header-2 > h1 {
+  color: wheat;
+  font-size: 3em;
+}
+#header-1 {
+  display: flex;
+}
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(52, 152, 219);
+  display: flex;
+  align-content: space-around;
+  border-bottom: 3px solid wheat;
+}
+#today {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#today:hover,
+#five-days:hover,
+#inputCity:hover {
+  border: 3px solid orangered;
+}
+#inputCity {
+  margin-left: 7%;
+  border-radius: 10px;
+  background-color: rgb(255, 205, 2);
+  text-align: center;
+  border: 3px solid;
+  font-weight: bold;
+  font-size: 1em;
+}
+#five-days,
+#today {
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  color: rgb(255, 205, 2);
+  font-weight: bold;
+  border: 3px solid rgb(255, 205, 2);
+}
+#container {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  min-height: 1000px;
+  background-image: url(image/weather.jpg);
+  background-repeat: repeat;
+}
+#div-sec {
+  top: 143px;
+  left: 55%;
+  position: fixed;
+  width: 40%;
+  height: 380px;
+  border: 5px solid rgb(52, 152, 219);
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  padding-top: 20px;
+  background-color: rgb(255, 205, 2, 0.2);
+}
+#h3 {
+  color: white;
+}
+#h-0,
+#h-1,
+#h-2,
+#h-3 {
+  color: rgb(255, 205, 2);
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#h-0 {
+  color: rgb(52, 152, 219);
+}
+#logo {
+  width: 65px;
+  height: 65px;
+  background-color: wheat;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: grey;
+  font-weight: bold;
+}
+#logo-2 {
+  padding-left: 15px;
+  padding-top: 40px;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#tooltiptext {
+  visibility: hidden;
+  background-color: rgb(255, 205, 2);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  color: black;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 20px;
+}
+#five-days #tooltiptext {
+  left: 102px;
+}
+#inputCity + #tooltiptext {
+  left: 325px;
+}
+#today:hover #tooltiptext {
+  visibility: visible;
+}
+#five-days:hover #tooltiptext {
+  visibility: visible;
+}
+#inputCity:hover + #tooltiptext {
+  visibility: visible;
+}
